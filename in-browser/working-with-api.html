@@ -20,7 +20,7 @@
 		<div class="container">
 			<div class="row">
 				<div v-for="currency in info" :key="currency.rate_flaot" class="col-md-4">
-					<p class="text-dark">{{currency.code}} <span>{{currency.description}}</span></p>
+					<p class="text-dark">{{currency.code}} (<span>{{currency.description}}</span>)</p>
 					<p class="text-danger"><span v-html="currency.symbol"></span><span>{{currency.rate_float | concurrencydecimal}}</span></p>
 				</div>
 			</div>
