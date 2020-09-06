@@ -21,7 +21,7 @@
               <router-link class="nav-link" to="/exercise">Exercise</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/dynamic_route/5">Dynamic Route</router-link>
+              <router-link class="nav-link" to="/dynamic_route">Dynamic Route</router-link>
             </li>
           </ul>
         </div>

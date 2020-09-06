@@ -12,18 +12,26 @@ const router = new VueRouter({
 	routes: [
     {
       path: '/testing',
+      name: 'testing',
       component: Testing
     },
     {
       path: '/exercise',
+      name: 'exercise',
       component: Exercise
+    },
+    {
+      path: '/dynamic_route',
+      name: 'dynamic',
+      props: true,
+      component: Dynamic
     },
     {
       path: '/dynamic_route/:id',
       name: 'dynamic',
       props: true,
       component: Dynamic
-    },
+    }
   ],
   mode: 'history' // abstract
 })
