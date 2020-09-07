@@ -27,13 +27,12 @@
 		data(){
 			return {
 				data: '',
-				seen : false
+				seen : false,
 			}
 		},
-		props: ['id'],
-		methods: {
-			say: function (message) {
-				alert(message)
+		computed: {
+			id: function () {
+				return this.$route.params.id
 			}
 		}
 	}
